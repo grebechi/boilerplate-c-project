@@ -1,0 +1,26 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+	  {
+		"label": "Compilar e Executar o Boilerplate",
+		"type": "shell",
+		"command": "bash",
+		"args": [
+		"-c", 
+        "mkdir -p build && gcc src/*.c -I include -o build/ex1 && build/ex1" 
+		],
+		"group": {
+		  "kind": "build",
+		  "isDefault": true
+		},
+		"presentation": {
+		  "reveal": "always",
+		  "focus": true,	 
+		  "close": true      
+		},
+		"problemMatcher": ["$gcc"],
+		"detail": "Compila e executa o código C em uma única tarefa."
+	  }
+	]
+  }
+  
